@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8rem;
+    }
+}
+
+html {
+    -webkit-print-color-adjust: exact;
+  }
+
+body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #385aa9;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+    margin-top: 1.3rem;
+    margin-bottom: 0.3rem;
+}
