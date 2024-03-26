@@ -16,9 +16,13 @@
     <div class="flex flex-row h-full">
         <div class="basis-2/3 pe-[0.5cm] pt-[1cm] ps-[1cm]">
             <div class="flex flex-col items-center">
-                <h1 class="uppercase font-thin text-3xl tracking-widest text-center"><%= name %></h1>
+                <h1 class="uppercase font-thin text-3xl tracking-widest text-center">
+                    <%= name %>
+                </h1>
                 <div class="h-1 w-10 bg-[#385aa9] my-3"></div>
-                <p class="uppercase text-[#5d5d5d] tracking-wide"><%= title %></p>
+                <p class="uppercase text-[#5d5d5d] tracking-wide">
+                    <%= title %>
+                </p>
                 <div class="h-px w-4/5 mt-3 bg-[#e2e2e2]"></div>
             </div>
             <!-- Profile -->
@@ -26,8 +30,10 @@
                 <h2 class="title">Profile</h2>
                 <ul class="marker:text-[#385aa9] list-disc list-inside">
                     <% for (let paragraph of profile) { %>
-                        <li class="font-light mb-1"><%= paragraph %></li>
-                    <% } %>
+                        <li class="font-light mb-1">
+                            <%= paragraph %>
+                        </li>
+                        <% } %>
                 </ul>
             </div>
             <!-- Experience -->
@@ -36,14 +42,20 @@
                 <ul class="marker:text-[#385aa9] list-disc list-inside">
                     <% for (let item of experience) { %>
                         <li class="font-light mb-2 relative">
-                            <span class="absolute end-0 top-0 text-gray-500"><%= item.date %></span>
-                            <span class="font-medium"><%= item.company %></span> 
+                            <span class="absolute end-0 top-0 text-gray-500">
+                                <%= item.date %>
+                            </span>
+                            <span class="font-medium">
+                                <%= item.company %>
+                            </span>
                             <% if (item.title) { %>
                                 - <%= item.title %>
-                            <% } %>
-                            <p><%= item.description %></p>
+                                    <% } %>
+                                        <p>
+                                            <%= item.description %>
+                                        </p>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
             <!-- Personal Projects -->
@@ -52,12 +64,24 @@
                 <ul class="marker:text-[#385aa9] list-disc list-inside">
                     <% for (let item of projects) { %>
                         <li class="font-light mb-2 relative">
-                            <span class="absolute end-0 top-0 text-gray-500"><%= item.date %></span>
-                            <span class="font-medium"><%= item.title %></span> 
-                            <p><%= item.description %></p>
-                            <a href="<%= item.url %>" target="_blank" class="underline"><%= item.url %></a>
+                            <span class="absolute end-0 top-0 text-gray-500">
+                                <%= item.date %>
+                            </span>
+                            <span class="items-center">
+                                <a class="font-medium" href="<%= item.url %>" target="_blank">
+                                    <%= item.title %>
+                                </a>
+                                <span> - </span>
+                                <a class="bg-[#385aa9] text-[0.7rem] text-white py-0.5 px-1.5 rounded"
+                                    href="<%= item.url %>" target="_blank" class="underline">
+                                    <%= item.url %>
+                                </a>
+                            </span>
+                            <p>
+                                <%= item.description %>
+                            </p>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
         </div>
@@ -70,26 +94,34 @@
                         <li class="my-1.5">
                             <span class="fa-li"><i class="<%= item.icon %>"></i></span>
                             <% if (item.url) { %>
-                                <a href="<%= item.url %>" target="_blank" class="underline"><%= item.text %></a>
-                            <% } else { %>
-                                <%= item.text %>
-                            <% } %>
+                                <a href="<%= item.url %>" target="_blank" class="underline">
+                                    <%= item.text %>
+                                </a>
+                                <% } else { %>
+                                    <%= item.text %>
+                                        <% } %>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
             <!-- Education -->
             <div>
                 <h2 class="title">Education</h2>
                 <ul class="font-light">
-                <% for (let item of education) { %>
-                    <li>
-                        <span class="font-medium"><%= item.institution %></span>
-                        <p><%= item.carreer %></p>
-                        <p><%= item.dateRange %></p>
-                    </li>
-                <% } %>
-            </ul>
+                    <% for (let item of education) { %>
+                        <li>
+                            <span class="font-medium">
+                                <%= item.institution %>
+                            </span>
+                            <p>
+                                <%= item.carreer %>
+                            </p>
+                            <p>
+                                <%= item.dateRange %>
+                            </p>
+                        </li>
+                        <% } %>
+                </ul>
             </div>
             <!-- Interests -->
             <div>
@@ -99,7 +131,7 @@
                         <li>
                             <%= interest %>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
             <!-- Aptitudes -->
@@ -110,7 +142,7 @@
                         <li>
                             <%= aptitude %>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
             <!-- Languages -->
@@ -121,7 +153,7 @@
                         <li>
                             <%= language.language %> - <%= language.level %>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
             <!-- Nationalities -->
@@ -132,7 +164,7 @@
                         <li>
                             <%= nationailty.name %>
                         </li>
-                    <% } %>
+                        <% } %>
                 </ul>
             </div>
             <!-- Skills -->
@@ -140,15 +172,17 @@
                 <h2 class="title">Skills</h2>
                 <div>
                     <% for (let skill of skills) { %>
-                        <p class="font-medium uppercase"><%= skill.title %></p>
+                        <p class="font-medium uppercase">
+                            <%= skill.title %>
+                        </p>
                         <div class="flex flex-row flex-wrap font-light text-[0.9rem]">
-                        <% for (let item of skill.items) { %>
-                            <div class="bg-[#385aa9] text-white py-0.5 px-1 me-1.5 mb-1.5 rounded">
-                                <%= item %>
-                            </div>
-                        <% } %>
+                            <% for (let item of skill.items) { %>
+                                <div class="bg-[#385aa9] text-white py-0.5 px-1 me-1.5 mb-1.5 rounded">
+                                    <%= item %>
+                                </div>
+                                <% } %>
                         </div>
-                    <% }  %>
+                        <% } %>
                 </div>
             </div>
         </div>
