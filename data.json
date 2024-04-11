@@ -35,7 +35,7 @@
         {
             "title": "Fluire",
             "date": "Jun. 2023 - Present",
-            "description": "A personal finance application currently in development for iOS with Swift and SwiftUI, using CoreData and CloudKit for managing data. It will be available later this year.",
+            "description": "Developed a personal finance application for iOS using Swift and SwiftUI, integrating CoreData and CloudKit for data management. The application provides users with comprehensive control over their expenses, enabling clear visibility into financial habits. Ensured secure and private data storage. Available on the App Store.",
             "url": "https://fluireapp.com"
         }
     ],
