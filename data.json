@@ -2,14 +2,20 @@
     "name": "Ignacio Paradisi",
     "title": "Senior Mobile Software Engineer",
     "profile": [
-        "Skilled Senior Software Engineer with six years of experience in iOS development using Swift and SwiftUI, adept in integrating REST and GraphQL services. Familiar with architectural patterns such as Clean Architecture, MVVM, MVC, and TDD as well as cross-platform development with Flutter.",
+        "Skilled Senior Software Engineer with seven years of experience in iOS development using Swift and SwiftUI, adept in integrating REST and GraphQL services. Familiar with architectural patterns such as Clean Architecture, MVVM, MVC, and TDD as well as cross-platform development with Flutter.",
         "I thrive in collaborative environments and am deeply committed to contributing my comprehensive background in both native and cross-platform mobile application development to create high-quality products with exceptional user experiences."
     ],
     "experience": [
         {
+            "company": "EarnIn",
+            "title": "Senior Mobile Engineer",
+            "date": "May. 2024 - Present",
+            "description": "Work closely with product and design teams to deliver high-quality user experiences, contributing to the app's core 'Transfer Out' flow—the most used feature enabling users to access their earnings. Develop iOS features using SwiftUI, UIKit, and MVVM, ensuring clean architecture and precise design implementation. Conduct A/B tests and other experiments to measure user behavior and optimize experiences that drive business impact."
+        },
+        {
             "company": "Kavak",
             "title": "Staff Software Engineer",
-            "date": "Jul. 2022 - Present",
+            "date": "Jul. 2022 - Mar. 2024",
             "description": "Spearheaded the development of a Flutter app from scratch, designed to render a server-driven UI. By employing reusable components alongside MVVM, Clean Architecture and GraphQL, I ensured a well-structured and maintainable codebase."
         },
         {
@@ -78,7 +84,8 @@
                 "Server Driven UI",
                 "Scrum",
                 "TDD",
-                "Unit Testing"
+                "Unit Testing",
+                "UI Testing"
             ]
         }
     ],
@@ -90,8 +97,8 @@
         },
         {
             "icon": "fa-solid fa-envelope",
-            "text": "ignacioparadisi@gmail.com",
-            "url": "mailto:ignacioparadisi@gmail.com"
+            "text": "ignacioparadisi@icloud.com",
+            "url": "mailto:ignacioparadisi@icloud.com"
         },
         {
             "icon": "fa-brands fa-linkedin",
