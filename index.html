@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="<%= lang %>">
 
 <head>
     <meta charset="UTF-8" />
@@ -26,18 +26,18 @@
             </div>
             <!-- Profile -->
             <div>
-                <h2 class="title">Profile</h2>
+                <h2 class="title"><%= labels.profile %></h2>
                 <ul class="marker:text-[#385aa9] list-disc list-inside">
                     <% for (let paragraph of profile) { %>
                         <li class="font-light mb-1">
-                            <%= paragraph %>
+                            <%= paragraph.text %>
                         </li>
                         <% } %>
                 </ul>
             </div>
             <!-- Experience -->
             <div>
-                <h2 class="title">Experience</h2>
+                <h2 class="title"><%= labels.experience %></h2>
                 <ul class="marker:text-[#385aa9] list-disc list-inside">
                     <% for (let item of experience) { %>
                         <li class="font-light mb-2 relative">
@@ -58,8 +58,9 @@
                 </ul>
             </div>
             <!-- Personal Projects -->
+            <% if (projects.length) { %>
             <div>
-                <h2 class="title">Personal Projects</h2>
+                <h2 class="title"><%= labels.projects %></h2>
                 <ul class="marker:text-[#385aa9] list-disc list-inside">
                     <% for (let item of projects) { %>
                         <li class="font-light mb-2 relative">
@@ -83,11 +84,12 @@
                         <% } %>
                 </ul>
             </div>
+            <% } %>
         </div>
-        <div class="basis-1/3 bg-[#ededed] pe-[1cm] ps-[0.5cm] grid grid-cols-1 content-center">
+        <div class="basis-1/3 bg-[#f0f0f5] pe-[1cm] ps-[0.5cm] grid grid-cols-1 content-center">
             <!-- Contact -->
             <div>
-                <h2 class="title">Contact</h2>
+                <h2 class="title"><%= labels.contact %></h2>
                 <ul class="fa-ul font-light">
                     <% for (let item of contact) { %>
                         <li class="my-1.5">
@@ -105,7 +107,7 @@
             </div>
             <!-- Education -->
             <div>
-                <h2 class="title">Education</h2>
+                <h2 class="title"><%= labels.education %></h2>
                 <ul class="font-light">
                     <% for (let item of education) { %>
                         <li>
@@ -124,7 +126,7 @@
             </div>
             <!-- Interests -->
             <div>
-                <h2 class="title">Interests</h2>
+                <h2 class="title"><%= labels.interests %></h2>
                 <ul class="font-light">
                     <% for (let interest of interests) { %>
                         <li>
@@ -135,7 +137,7 @@
             </div>
             <!-- Aptitudes -->
             <div>
-                <h2 class="title">Aptitudes</h2>
+                <h2 class="title"><%= labels.aptitudes %></h2>
                 <ul class="font-light">
                     <% for (let aptitude of aptitudes) { %>
                         <li>
@@ -146,7 +148,7 @@
             </div>
             <!-- Languages -->
             <div>
-                <h2 class="title">Languages</h2>
+                <h2 class="title"><%= labels.languages %></h2>
                 <ul class="font-light">
                     <% for (let language of languages) { %>
                         <li>
@@ -157,7 +159,7 @@
             </div>
             <!-- Nationalities -->
             <div>
-                <h2 class="title">Nationalities</h2>
+                <h2 class="title"><%= labels.nationalities %></h2>
                 <ul class="font-light">
                     <% for (let nationailty of nationalities) { %>
                         <li>
@@ -168,7 +170,7 @@
             </div>
             <!-- Skills -->
             <div>
-                <h2 class="title">Skills</h2>
+                <h2 class="title"><%= labels.skills %></h2>
                 <div>
                     <% for (let skill of skills) { %>
                         <p class="font-medium uppercase">
@@ -176,7 +178,7 @@
                         </p>
                         <div class="flex flex-row flex-wrap font-light text-[0.9rem]">
                             <% for (let item of skill.items) { %>
-                                <div class="bg-[#385aa9] text-white py-0.5 px-1 me-1.5 mb-1.5 rounded">
+                                <div class="bg-[#FFFFFF] py-0.5 px-1 me-1.5 mb-1.5 rounded-lg">
                                     <%= item %>
                                 </div>
                                 <% } %>

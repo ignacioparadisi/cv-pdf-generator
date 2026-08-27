@@ -11,7 +11,7 @@ app.get('/', async (req, res) => {
     if (!fs.existsSync(tempDir)) {
         fs.mkdirSync(tempDir, { recursive: true });
     }
-    let htmlPath = await renderHTML(path.join(__dirname, 'index.html'), path.join(tempDir, 'rendered_index.html'))
+    let htmlPath = await renderHTML(path.join(__dirname, 'index.html'), path.join(tempDir, 'rendered_index.html'), req.query.locale)
     res.sendFile(htmlPath, () => {
         fs.rmSync(tempDir, { recursive: true });
     });
@@ -22,7 +22,7 @@ app.get('/pdf', async (req, res) => {
     if (!fs.existsSync(tempDir)) {
         fs.mkdirSync(tempDir, { recursive: true });
     }
-    let pdfPath = await generate(tempDir, 'cv.pdf');
+    let pdfPath = await generate(tempDir, 'cv.pdf', req.query.locale);
     res.sendFile(pdfPath, () => {
         fs.rmSync(tempDir, { recursive: true });
     });
