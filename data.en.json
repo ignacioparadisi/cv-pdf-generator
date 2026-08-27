@@ -1,0 +1,183 @@
+{
+    "labels": {
+        "profile": "Profile",
+        "experience": "Experience",
+        "projects": "Personal Projects",
+        "contact": "Contact",
+        "education": "Education",
+        "interests": "Interests",
+        "aptitudes": "Aptitudes",
+        "languages": "Languages",
+        "nationalities": "Nationalities",
+        "skills": "Skills"
+    },
+    "name": "Ignacio Paradisi",
+    "title": "Senior Software Engineer",
+    "profile": [
+        {
+            "text": "Skilled Senior Software Engineer with 8+ years of experience in iOS development using Swift and SwiftUI, adept in integrating REST and GraphQL services. Familiar with architectural patterns such as Clean Architecture, MVVM, MVC, and TDD as well as cross-platform development with Flutter."
+        },
+        {
+            "text": "Currently specializing in localization, internationalization (i18n), and accessibility (a11y) to build inclusive, globally-ready products."
+        },
+        {
+            "text": "I thrive in collaborative environments and am deeply committed to contributing my comprehensive background in both native and cross-platform mobile application development to create high-quality products with exceptional user experiences."
+        }
+    ],
+    "experience": [
+        {
+            "company": "Pinterest",
+            "title": "Software Engineer II",
+            "date": "Jul. 2025 - Present",
+            "description": "Focus on Localization/Internationalization and Accessibility, helping deliver an inclusive, high-quality experience for Pinterest's global audience across languages, locales, and assistive technologies."
+        },
+        {
+            "company": "EarnIn",
+            "title": "Senior Mobile Engineer",
+            "date": "May. 2024 - Jul. 2025",
+            "description": "Worked closely with product and design teams to deliver high-quality user experiences, contributing to the app's core 'Transfer Out' flow—the most used feature enabling users to access their earnings. Developed iOS features using SwiftUI, UIKit, and MVVM, ensuring clean architecture and precise design implementation. Conducted A/B tests and other experiments to measure user behavior and optimize experiences that drove business impact."
+        },
+        {
+            "company": "Kavak",
+            "title": "Staff Software Engineer",
+            "date": "Jul. 2022 - Mar. 2024",
+            "description": "Spearheaded the development of a Flutter app from scratch, designed to render a server-driven UI. By employing reusable components alongside MVVM, Clean Architecture and GraphQL, I ensured a well-structured and maintainable codebase."
+        },
+        {
+            "company": "Kavak",
+            "title": "Engineering Lead",
+            "date": "Jul. 2021 - Jul. 2022",
+            "description": "Established a close collaboration with the product and the developer teams, acting as a bridge to ensure clear communication and alignment on goals. A significant milestone during my tenure was leading the successful migration of an entire app from iOS to Android."
+        },
+        {
+            "company": "Kavak",
+            "title": "iOS Developer",
+            "date": "Feb. 2019 - Jun. 2022",
+            "description": "As one of the pioneering iOS Developers at Kavak, I played a pivotal role in laying the foundation of the mobile application landscape within the organization. My contributions spanned from developing several internal applications to engaging in backend development."
+        },
+        {
+            "company": "Pictune",
+            "title": "iOS Developer",
+            "date": "Dec. 2017 - Jan. 2019",
+            "description": "Contributed to the development of Pictune, an app that uniquely blends music with images."
+        }
+    ],
+    "projects": [],
+    "skills": [
+        {
+            "title": "Programming Languages",
+            "items": [
+                "Swift",
+                "Objective-C",
+                "Javascript",
+                "Typescript"
+            ]
+        },
+        {
+            "title": "Frameworks and Libraries",
+            "items": [
+                "UIKit",
+                "SwiftUI",
+                "Flutter",
+                "NodeJS"
+            ]
+        },
+        {
+            "title": "Databases",
+            "items": [
+                "SQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "title": "Concepts",
+            "items": [
+                "Clean Architecture",
+                "MVVM",
+                "Design Patterns",
+                "Reactive Programming",
+                "Server Driven UI",
+                "Protocol Oriented Programming",
+                "TDD"
+            ]
+        }
+    ],
+    "contact": [
+        {
+            "icon": "fa-solid fa-phone",
+            "text": "+52 5610155088",
+            "url": "tel:+525610155088"
+        },
+        {
+            "icon": "fa-solid fa-envelope",
+            "text": "ignacioparadisi@icloud.com",
+            "url": "mailto:ignacioparadisi@icloud.com"
+        },
+        {
+            "icon": "fa-brands fa-linkedin",
+            "text": "Ignacio Paradisi",
+            "url": "https://www.linkedin.com/in/ignacio-paradisi-3a6471159/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "@ignacioparadisi",
+            "url": "https://github.com/ignacioparadisi"
+        },
+        {
+            "icon": "fa-solid fa-location-dot",
+            "text": "Mexico City, Mexico",
+            "regions": ["MX"]
+        },
+        {
+            "icon": "fa-solid fa-location-dot",
+            "text": "Mexico City, Mexico · Open to relocating to Spain",
+            "regions": ["ES"]
+        },
+        {
+            "icon": "fa-solid fa-location-dot",
+            "text": "Mexico City, Mexico · Open to relocating to the United Kingdom",
+            "regions": ["GB"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad Católica Andrés Bello",
+            "carreer": "Computer Engineering",
+            "dateRange": "Sep. 2015 - Mar. 2020"
+        }
+    ],
+    "interests": [
+        "Being up to date with new techologies",
+        "Learn new concepts",
+        "Play the piano"
+    ],
+    "aptitudes": [
+        "Proactive",
+        "Teamwork",
+        "Positive",
+        "Engaged"
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "level": "Native"
+        },
+        {
+            "language": "English",
+            "level": "Advanced"
+        }
+    ],
+    "nationalities": [
+        {
+            "name": "Italian (EU citizen — no visa required)",
+            "regions": ["ES"]
+        },
+        {
+            "name": "Italian",
+            "regions": ["MX", "GB"]
+        },
+        {
+            "name": "Venezuelan"
+        }
+    ]
+}
