@@ -176,13 +176,9 @@
                         <p class="font-medium uppercase">
                             <%= skill.title %>
                         </p>
-                        <div class="flex flex-row flex-wrap font-light text-[0.9rem]">
-                            <% for (let item of skill.items) { %>
-                                <div class="bg-[#FFFFFF] py-0.5 px-1 me-1.5 mb-1.5 rounded-lg">
-                                    <%= item %>
-                                </div>
-                                <% } %>
-                        </div>
+                        <p class="font-light text-[0.9rem] mb-2">
+                            <% skill.items.forEach((item, i) => { %><%= item %><% if (i < skill.items.length - 1) { %><span class="text-[#385aa9] font-medium"> · </span><% } %><% }); %>
+                        </p>
                         <% } %>
                 </div>
             </div>
