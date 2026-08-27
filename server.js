@@ -9,7 +9,7 @@ const port = 3000;
 app.get('/', async (req, res) => {
     let tempDir = path.join(__dirname, 'tmp', 'files');
     if (!fs.existsSync(tempDir)) {
-        fs.mkdirSync(tempDir);
+        fs.mkdirSync(tempDir, { recursive: true });
     }
     let htmlPath = await renderHTML(path.join(__dirname, 'index.html'), path.join(tempDir, 'rendered_index.html'))
     res.sendFile(htmlPath, () => {
@@ -20,7 +20,7 @@ app.get('/', async (req, res) => {
 app.get('/pdf', async (req, res) => {
     let tempDir = path.join(__dirname, 'tmp', 'files');
     if (!fs.existsSync(tempDir)) {
-        fs.mkdirSync(tempDir);
+        fs.mkdirSync(tempDir, { recursive: true });
     }
     let pdfPath = await generate(tempDir, 'cv.pdf');
     res.sendFile(pdfPath, () => {

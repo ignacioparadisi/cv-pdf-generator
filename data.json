@@ -3,7 +3,8 @@
     "title": "Senior Mobile Software Engineer",
     "profile": [
         "Skilled Senior Software Engineer with seven years of experience in iOS development using Swift and SwiftUI, adept in integrating REST and GraphQL services. Familiar with architectural patterns such as Clean Architecture, MVVM, MVC, and TDD as well as cross-platform development with Flutter.",
-        "I thrive in collaborative environments and am deeply committed to contributing my comprehensive background in both native and cross-platform mobile application development to create high-quality products with exceptional user experiences."
+        "I thrive in collaborative environments and am deeply committed to contributing my comprehensive background in both native and cross-platform mobile application development to create high-quality products with exceptional user experiences.",
+        "As an Italian (EU) citizen, I hold an EU passport and am authorized to live and work anywhere in the European Union without visa sponsorship. Open to relocating to the EU or UK."
     ],
     "experience": [
         {
@@ -112,7 +113,7 @@
         },
         {
             "icon": "fa-solid fa-location-dot",
-            "text": "Mexity City, Mexico"
+            "text": "Mexico City, Mexico · Open to relocating to the EU or UK"
         }
     ],
     "education": [
@@ -145,10 +146,10 @@
     ],
     "nationalities": [
         {
-            "name": "Venezuelan"
+            "name": "Italian (EU citizen — no visa required)"
         },
         {
-            "name": "Italian"
+            "name": "Venezuelan"
         }
     ]
 }
