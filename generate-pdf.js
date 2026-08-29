@@ -47,10 +47,32 @@ const filterByRegion = (node, region) => {
     return node;
 };
 
+const isPlainObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
+
+// Deep-merge an override object over a base: nested objects merge recursively,
+// while arrays and primitives from the override replace the base outright.
+const deepMerge = (base, override) => {
+    const out = { ...base };
+    for (const [key, value] of Object.entries(override)) {
+        out[key] = isPlainObject(value) && isPlainObject(out[key])
+            ? deepMerge(out[key], value)
+            : value;
+    }
+    return out;
+};
+
+const readJSON = (filePath) => JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+// Load the base language file (data.<lang>.json), then layer a region-specific
+// override (data.<lang>-<region>.json) on top when one exists. This is the
+// standard locale-fallback pattern: e.g. en-GB overrides only what differs from en.
 const readData = (lang, region) => {
-    const dataPath = path.join(__dirname, `data.${lang}.json`);
-    const raw = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    const data = filterByRegion(raw, region);
+    let data = readJSON(path.join(__dirname, `data.${lang}.json`));
+    const overridePath = path.join(__dirname, `data.${lang}-${region}.json`);
+    if (fs.existsSync(overridePath)) {
+        data = deepMerge(data, readJSON(overridePath));
+    }
+    data = filterByRegion(data, region);
     return { ...data, lang, region };
 };
 
