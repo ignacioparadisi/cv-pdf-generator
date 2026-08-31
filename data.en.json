@@ -106,7 +106,8 @@
         {
             "icon": "fa-solid fa-phone",
             "text": "+52 5610155088",
-            "url": "tel:+525610155088"
+            "url": "tel:+525610155088",
+            "regions": ["MX"]
         },
         {
             "icon": "fa-solid fa-envelope",
@@ -130,12 +131,12 @@
         },
         {
             "icon": "fa-solid fa-location-dot",
-            "text": "Mexico City, Mexico · Open to relocating to Spain",
+            "text": "Madrid, Spain",
             "regions": ["ES"]
         },
         {
             "icon": "fa-solid fa-location-dot",
-            "text": "Mexico City, Mexico · Open to relocating to the United Kingdom",
+            "text": "Madrid, Spain · Open to relocating to the United Kingdom",
             "regions": ["GB"]
         }
     ],
